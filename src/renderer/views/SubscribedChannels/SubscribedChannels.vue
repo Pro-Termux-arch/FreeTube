@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable @intlify/vue-i18n/no-raw-text -->
   <div>
     <ft-card class="card">
       <div class="omatube-eyebrow">

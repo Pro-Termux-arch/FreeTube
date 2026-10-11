@@ -1,0 +1,261 @@
+/* OmaTube — Omarchy/Sage reskin on top of FreeTube. Matches mockups 1:1. Pure black, sage accent. */
+
+/* ── base ── */
+body.omarchy,
+body.black {
+  --omatube-sage: #c5d8a6;
+  --omatube-sage-dim: #96aa7d;
+  --omatube-muted: #9aa096;
+  --omatube-faint: #6e7468;
+  --omatube-olive: #8a937e;
+  --omatube-card: #0f120f;
+  --omatube-card-border: #222622;
+  --omatube-input: #101310;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #000 !important;
+}
+
+/* ── app shell ── */
+body.omarchy .app,
+body.black .app {
+  background: #000;
+}
+
+/* ── TopNav: pill search like mockup ── */
+body.omarchy .topNav,
+body.black .topNav {
+  background: #050605 !important;
+  border-bottom: 1px solid #181a18;
+  block-size: 56px;
+}
+body.omarchy .topNav .searchInput,
+body.black .topNav .searchInput {
+  background: #101310 !important;
+  border: 1px solid #262a26 !important;
+  border-radius: 8px !important;
+  max-inline-size: 460px;
+}
+body.omarchy .topNav .logoText,
+body.black .topNav .logoText {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+/* ── SideNav: 188px, YOUR LIBRARY, sage active ── */
+body.omarchy .sideNav,
+body.black .sideNav {
+  inline-size: 188px !important;
+  background: #080a08 !important;
+  border-inline-end: 1px solid #141614;
+}
+body.omarchy .sideNav .navOption,
+body.black .sideNav .navOption {
+  border-radius: 8px !important;
+  margin: 2px 8px !important;
+  padding: 8px 12px !important;
+  color: #9aa096 !important;
+}
+body.omarchy .sideNav .navOption.router-link-active,
+body.black .sideNav .navOption.router-link-active,
+body.omarchy .sideNav .navOption.active,
+body.black .sideNav .navOption.active {
+  background: #1c2417 !important;
+  color: #c5d8a6 !important;
+}
+body.omarchy .sideNav .navOption:hover,
+body.black .sideNav .navOption:hover {
+  background: #141814 !important;
+  color: #e6ecdc !important;
+}
+
+/* ── cards ── */
+body.omarchy .ft-card,
+body.omarchy .card,
+body.black .ft-card,
+body.black .card {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* ── headers: breadcrumb + big title like mockups ── */
+body.omarchy .omatube-eyebrow,
+body.black .omatube-eyebrow {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: #8a937e;
+  text-transform: uppercase;
+  margin-block-end: 10px;
+}
+body.omarchy .omatube-h1,
+body.black .omatube-h1 {
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.01em;
+  color: #fff !important;
+  margin: 0 0 6px !important;
+}
+body.omarchy .omatube-sub,
+body.black .omatube-sub {
+  font-size: 13px;
+  color: #9aa096;
+  margin-block-end: 4px;
+}
+
+/* ── video grid: 4 cols, rounded thumbs, duration badge ── */
+body.omarchy .ftAutoGrid.grid,
+body.black .ftAutoGrid.grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 22px 20px !important;
+}
+body.omarchy .ft-list-video .videoThumbnail,
+body.black .ft-list-video .videoThumbnail {
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+body.omarchy .ft-list-video .videoThumbnail img,
+body.black .ft-list-video .videoThumbnail img {
+  border-radius: 8px !important;
+}
+body.omarchy .ft-list-video .duration,
+body.omarchy .ft-list-video .videoDuration,
+body.black .ft-list-video .duration,
+body.black .ft-list-video .videoDuration {
+  background: rgb(0 0 0 / 85%) !important;
+  border-radius: 5px !important;
+  font-size: 11px !important;
+  padding: 3px 6px !important;
+}
+body.omarchy .ft-list-video .title,
+body.black .ft-list-video .title {
+  font-size: 12.5px !important;
+  line-height: 1.45 !important;
+  color: #fff !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+body.omarchy .ft-list-video .channelName,
+body.black .ft-list-video .channelName {
+  font-size: 12px !important;
+  color: #9aa096 !important;
+}
+body.omarchy .ft-list-video .views,
+body.omarchy .ft-list-video .published,
+body.black .ft-list-video .views,
+body.black .ft-list-video .published {
+  font-size: 10.5px !important;
+  color: #6e7468 !important;
+}
+
+/* ── channel grid: cards like mockup ── */
+body.omarchy .channels,
+body.black .channels {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+  gap: 16px !important;
+}
+body.omarchy .channels .channel,
+body.black .channels .channel {
+  background: #0f120f !important;
+  border: 1px solid #222622 !important;
+  border-radius: 12px !important;
+  padding: 18px 14px 14px !important;
+  text-align: center;
+  align-items: center;
+}
+body.omarchy .channels .channelThumbnail,
+body.black .channels .channelThumbnail {
+  inline-size: 56px !important;
+  block-size: 56px !important;
+  border-radius: 50% !important;
+  margin-inline: auto;
+}
+body.omarchy .channels .channelName,
+body.black .channels .channelName {
+  font-size: 12.5px !important;
+  color: #fff !important;
+  margin-block: 10px 4px !important;
+  text-align: center !important;
+}
+body.omarchy .channels .unsubscribeContainer button,
+body.black .channels .unsubscribeContainer button {
+  inline-size: 100%;
+  background: #141814 !important;
+  border: 1px solid #2a2e2a !important;
+  border-radius: 8px !important;
+  color: #9aa096 !important;
+}
+
+/* ── tabs: Videos 08 Shorts Live Posts ── */
+body.omarchy .tabs .tab,
+body.black .tabs .tab {
+  color: #9aa096 !important;
+  font-size: 12.5px !important;
+  padding-block-end: 10px !important;
+}
+body.omarchy .tabs .tab.selectedTab,
+body.black .tabs .tab.selectedTab {
+  color: #c5d8a6 !important;
+  border-bottom: 1px solid #c5d8a6 !important;
+}
+
+/* ── inputs & dropdowns ── */
+body.omarchy input,
+body.omarchy select,
+body.omarchy .ft-input input,
+body.black input,
+body.black select,
+body.black .ft-input input {
+  background: #101310 !important;
+  border: 1px solid #262a26 !important;
+  border-radius: 8px !important;
+  color: #e8ece4 !important;
+}
+
+/* ── toggles: sage when on ── */
+body.omarchy .ft-toggle-switch input:checked + .slider,
+body.black .ft-toggle-switch input:checked + .slider {
+  background-color: #c5d8a6 !important;
+}
+body.omarchy .ft-toggle-switch input:checked + .slider::before,
+body.black .ft-toggle-switch input:checked + .slider::before {
+  background-color: #000 !important;
+}
+
+/* ── settings sections as cards ── */
+body.omarchy .ft-settings-section,
+body.black .ft-settings-section {
+  background: #0f120f !important;
+  border: 1px solid #222622 !important;
+  border-radius: 12px !important;
+  padding: 22px !important;
+}
+
+/* ── buttons: secondary dark ── */
+body.omarchy .ft-button.secondary,
+body.black .ft-button.secondary {
+  background: #141814 !important;
+  border: 1px solid #2a2e2a !important;
+  color: #dfe5d8 !important;
+  border-radius: 8px !important;
+}
+body.omarchy .ft-button.primary,
+body.black .ft-button.primary {
+  background: #c5d8a6 !important;
+  color: #000 !important;
+}
+
+/* ── scrollbars ── */
+body.omarchy ::-webkit-scrollbar,
+body.black ::-webkit-scrollbar {
+  inline-size: 10px;
+}
+body.omarchy ::-webkit-scrollbar-thumb,
+body.black ::-webkit-scrollbar-thumb {
+  background: #262a26;
+  border-radius: 8px;
+}

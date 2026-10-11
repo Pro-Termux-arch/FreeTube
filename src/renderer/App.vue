@@ -774,4 +774,5 @@ async function getClip(clipId) {
 </script>
 
 <style src="./themes.css" />
+<style src="./omatube.css" />
 <style scoped src="./App.css" />

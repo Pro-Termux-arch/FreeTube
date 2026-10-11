@@ -203,21 +203,28 @@ it can be safely elided. This looks quite pleasant on this theme. */
   --search-bar-color: #262626;
 }
 
-.black {
-  --primary-text-color: #eee;
-  --secondary-text-color: #ddd;
-  --tertiary-text-color: #eee;
-  --title-color: #eee;
+.black,
+.omarchy {
+  --primary-text-color: #f2f4ee;
+  --secondary-text-color: #9aa096;
+  --tertiary-text-color: #6e7468;
+  --title-color: #ffffff;
   --bg-color: #000;
-  --favorite-icon-color: #0f0;
-  --card-bg-color: #000;
-  --secondary-card-bg-color: rgb(0 0 0 / 75%);
-  --scrollbar-color: #515151;
-  --scrollbar-color-hover: #424242;
-  --side-nav-color: #000;
-  --side-nav-hover-color: #212121;
-  --side-nav-active-color: #303030;
-  --search-bar-color: #262626;
+  --favorite-icon-color: #c5d8a6;
+  --card-bg-color: #0f120f;
+  --secondary-card-bg-color: rgb(15 18 15 / 90%);
+  --scrollbar-color: #262a26;
+  --scrollbar-color-hover: #2e332e;
+  --side-nav-color: #080a08;
+  --side-nav-hover-color: #141814;
+  --side-nav-active-color: #1c2417;
+  --side-nav-active-text-color: #c5d8a6;
+  --search-bar-color: #101310;
+  --logo-icon: url('../../_icons/omatubeIconSmall.svg');
+  --logo-text: url('../../_icons/omatubeTextSmall.svg');
+  --logo-primary-color: #c5d8a6;
+  --logo-secondary-color: #c5d8a6;
+  --logo-tertiary-color: #fff;
 }
 
 .nordic {
@@ -585,6 +592,7 @@ it can be safely elided. This looks quite pleasant on this theme. */
 }
 
 /* light primary theme colors */
+.mainSage,
 .mainLightGreen,
 .mainLime,
 .mainYellow,
@@ -600,6 +608,13 @@ it can be safely elided. This looks quite pleasant on this theme. */
   --primary-color: #f44336;
   --primary-color-hover: #e53935;
   --primary-color-active: #c62828;
+}
+
+.mainSage {
+  --primary-color: #c5d8a6;
+  --primary-color-hover: #b3c795;
+  --primary-color-active: #9db384;
+  --text-with-main-color: #000;
 }
 
 .mainPink {

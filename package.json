@@ -1,7 +1,7 @@
 {
-  "name": "freetube",
-  "productName": "FreeTube",
-  "description": "A private YouTube client",
+  "name": "omatube",
+  "productName": "OmaTube",
+  "description": "A private YouTube client - OmaTube edition (Omarchy/Sage)",
   "version": "0.25.3",
   "license": "AGPL-3.0-or-later",
   "main": "./dist/main.js",

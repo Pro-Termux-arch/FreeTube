@@ -5,6 +5,7 @@ export function useColorTranslations() {
   const { t } = useI18n()
 
   return computed(() => [
+    t('Settings.Theme Settings.Main Color Theme.Sage'),
     t('Settings.Theme Settings.Main Color Theme.Red'),
     t('Settings.Theme Settings.Main Color Theme.Pink'),
     t('Settings.Theme Settings.Main Color Theme.Purple'),

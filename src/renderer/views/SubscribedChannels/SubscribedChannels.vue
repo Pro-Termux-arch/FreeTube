@@ -1,7 +1,16 @@
 <template>
   <div>
     <ft-card class="card">
-      <h2>
+      <div class="omatube-eyebrow">
+        Library / Channel list
+      </div>
+      <h1 class="omatube-h1">
+        Good channels. Your choice.
+      </h1>
+      <p class="omatube-sub">
+        {{ $t('Channels.Count', { number: channelList.length }) }} — followed on your terms. Keep control of your feed.
+      </p>
+      <h2 style="display: none;">
         <FontAwesomeIcon
           :icon="['fas', 'user-check']"
           class="headingIcon"

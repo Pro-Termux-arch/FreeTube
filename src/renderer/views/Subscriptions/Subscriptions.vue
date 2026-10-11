@@ -1,7 +1,16 @@
 <template>
   <div>
     <FtCard class="card">
-      <h2>
+      <div class="omatube-eyebrow">
+        Library / Subscriptions
+      </div>
+      <h1 class="omatube-h1">
+        Your subscriptions.
+      </h1>
+      <p class="omatube-sub">
+        The latest from the channels you choose. Nothing more.
+      </p>
+      <h2 style="display: none;">
         <FontAwesomeIcon
           :icon="['fas', 'rss']"
           class="subscriptionIcon"
